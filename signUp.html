@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="icon.png" type="application/atom+xml">
+    <title>Sign up</title>
+</head>
+<style>
+    body {
+        background-color: rgb(193, 253, 255);
+    }
+
+    form {
+        width: 300px;
+        margin: auto;
+        position: relative;
+        background-color: rgb(122, 255, 117);
+    }
+
+    .btns:hover {
+        color: #fff;
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+
+    .btns {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        border-radius: 8%;
+        height: 35px;
+        width: 80px;
+        position: absolute;
+        right: 15px;
+        bottom: 56px;
+        box-shadow: 0px 0px;
+    }
+
+    .btnz {
+        color: #fff;
+        background-color: dodgerblue;
+        border-color: #6c757d;
+        border-radius: 8%;
+        height: 35px;
+        width: 100px;
+    }
+    input{
+        border-color: dodgerblue;
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <form class="border border-primary rounded-10 p-3" id="signup">
+            <fieldset>
+                <h2 align="center">Sign up</h2>
+                <input oninput="nored()" placeholder="Your name" align="right" type="text" id="name" class="form-control mb-3"
+                    required><br>
+                <input oninput="nored()" placeholder="Your email" align="right" type="email" id="mail" class="form-control mb-3"
+                    required><br>
+                <input oninput="nored()" placeholder="Your password" align="right" type="password" id="pass" class="form-control mb-3"
+                    required><br>
+                <input oninput="nored()" placeholder="Confirm password" align="right" type="password" id="pass2" class="form-control mb-3"
+                    required><br>
+                    <p id="check" style="color: red;" align="center"></p>
+                <button type="button" onclick="checknone()" class="btnz btn btn-primary">Sign Up!</button>
+                <button type="button" onclick="cancel()" class="btns">Cancel</button>
+                <p align="center">Already have an account? <a href="login.html">Sign in!</a></p>
+            </fieldset>
+        </form>
+    </div>
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
